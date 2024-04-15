@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/d0056ec085.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="lg:w-[90%] mx-auto mt-5 lg:mt-10">
+    <header class="lg:w-[90%] mx-auto mt-5 lg:mt-10 mb-80 lg:mb-60">
         <!-- navigation -->
         <div class="navbar bg-base-100 raleway-font">
             <div class="navbar-start">
@@ -43,24 +43,128 @@
             </div>
           </div>
           <!-- banner -->
-          <section class="my-10">
-            <div class="hero h-[800px] rounded-[32px]" style="background-image: url(./images/banner.png);">
-                <div class="hero-content text-center text-neutral-content -mt-32">
-                  <div class="max-w-[90%] lg:max-w-[700px] space-y-8">
-                    <h1 class="text-3xl lg:text-6xl font-extrabold text[#FFFFFF] raleway-font line-height-86">End-to-End Travel with  <br>
-                        <span class="text-[#1DD100]">P Paribahan</span>
-                    </h1>
-                    <p class="mb-5 inter-font">Experience seamless travel with P Paribahan! From booking to arrival, we ensure a hassle-free journey. Explore our routes, book tickets, and enjoy comfortable rides with us today</p>
-                    <button class="btn bg-[#1DD100] border-none raleway-font text-base font-extrabold">Buy Tickets</button>
-                  </div>
+          <section class="my-10 relative">
+            <div class="hero h-[800px] rounded-[32px] relative" style="background-image: url(./images/banner.png);">
+                <div class="hero-content text-center text-neutral-content -mt-32 relative z-10">
+                    <div class="max-w-[90%] lg:max-w-[700px] space-y-8">
+                        <h1 class="text-3xl lg:text-6xl font-extrabold text[#FFFFFF] raleway-font line-height-86">End-to-End Travel with  <br>
+                            <span class="text-[#1DD100]">P Paribahan</span>
+                        </h1>
+                        <p class="mb-5 inter-font">Experience seamless travel with P Paribahan! From booking to arrival, we ensure a hassle-free journey. Explore our routes, book tickets, and enjoy comfortable rides with us today</p>
+                        <button class="btn bg-[#1DD100] border-none raleway-font text-base font-extrabold">Buy Tickets</button>
+                    </div>
                 </div>
-              </div>
-          </section>
-
+            </div>
+            <!-- banner cards -->
+            
+            <div class="flex flex-col gap-10 justify-center items-center lg:flex-row lg:justify-evenly absolute -bottom-60 lg:top-100 left-0 right-0 lg:-bottom-20">
+                <!-- card 1 -->
+                <div class="card w-80 bg-base-100 shadow-xl rounded-3xl border-b-4 border-[#1DD100]">
+                    <div class="flex justify-center items-center pl-8">
+                        <div class="">
+                            <img src="./images/people.png" alt="Shoes" class="rounded-xl" />
+                        </div>
+                        <div class="card-body items-center inter-font -ml-10 text-left">
+                            <h2 class="text-4xl font-extrabold">500K+</h2>
+                            <p class="text-lg font-normal text-[#03071299]">Registered users</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card w-80 bg-base-100 shadow-xl rounded-3xl border-b-4 border-[#1DD100]">
+                    <div class="flex justify-center items-center pl-8">
+                        <div class="">
+                            <img src="./images/ticket-cupon.png" alt="Shoes" class="rounded-xl" />
+                        </div>
+                        <div class="card-body items-center inter-font -ml-10 text-left">
+                            <h2 class="text-4xl font-extrabold">1.7 lacks</h2>
+                            <p class="text-lg font-normal text-[#03071299]">Tickets sold</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card w-80 bg-base-100 shadow-xl rounded-3xl border-b-4 border-[#1DD100]">
+                    <div class="flex justify-center items-center pl-8">
+                        <div class="">
+                            <img src="./images/stoppage.png" alt="Shoes" class="rounded-xl" />
+                        </div>
+                        <div class="card-body items-center inter-font -ml-10 text-left">
+                            <h2 class="text-4xl font-extrabold">80K+</h2>
+                            <p class="text-lg font-normal text-[#03071299]">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
+        <!-- offer section -->
+        <section class="lg:w-[90%] text-center space-y-10 raleway-font mx-auto">
+            <h2 class="text-3xl lg:text-4xl font-bold">Best offers for you</h2>
+            <!-- offer codes -->
+            <div class="flex gap-8 flex-col lg:flex-row lg:justify-around">
+                <!-- 15% Off -->
+                <div class="bg-[#FFBF0F] max-w-[ 573px] rounded-3xl p-10 flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-20 items-center ">
+                    <div class="inter-font text-center lg:text-left space-y-2">
+                        <h2 class="font-black text-4xl text-[#030712CC]">15% OFF</h2>
+                        <p class="font-semibold text-xl text-[#030712CC]">on your next purchase</p>
+                        <p class="font-medium text-lg text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="raleway-font text-left space-y-2">
+                        <h2 class="font-bold text-3xl">NEW15</h2>
+                        <p class="font-medium text-lg">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- 20% off -->
+                <div class="bg-[#F78C9C] max-w-[ 573px] rounded-3xl p-10 flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-20 items-center">
+                    <div class="inter-font text-center lg:text-left space-y-2">
+                        <h2 class="font-black text-4xl text-[#030712CC]">20% OFF</h2>
+                        <p class="font-semibold text-xl text-[#030712CC]">on your next purchase</p>
+                        <p class="font-medium text-lg text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="raleway-font text-left space-y-2">
+                        <h2 class="font-bold text-3xl">Couple 20</h2>
+                        <p class="font-medium text-lg">Coupon Code</p>
+                    </div>
+                </div>
 
+            </div>
+            <button class="btn btn-outline font-bold text-xl text-[#1DD100] ">See All Offers</button>
+        </section>
+
+        <!-- P.H Paribahan -->
+        <section class="mt-24 raleway-font bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-[88px">
+            <div class="mt-24 max-w-[90%] lg:max-w-[700px] space-y-8 mx-auto text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold">P.H Paribahan</h2>
+                <p>P.H Paribahan offers reliable transportation services across Bangladesh, prioritizing safety, efficiency, and customer satisfaction for a seamless travel experience."</p>
+            </div>
+
+            <!-- seats -->
+            <div class="w-[90%] bg-[#FFFFFF] p-20 mt-20 mx-auto rounded-2xl">
+                <!-- Paribahan info -->
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center gap-8">
+                        <div><img src="./images/bus-logo.png"></div>
+                        <div>
+                            <h2 class="raleway-font text-3xl font-bold">Greenline Paribahan</h2>
+                            <p class="inter-font text-lg font-normal">Coach-009-WEB ! AC_Business</p>
+                        </div>
+                    </div>
+                    <!-- available seats -->
+                    <div>
+                        <button class="btn text-[#1DD100] font-medium text-lg inter-font bg-[#1DD10026]">
+                            <img src="./images/seat-green.png">
+                            <span>40</span>
+                            Seats left</button>
+                    </div>
+                </div>
+                <!-- Purchasing Price -->
+                <div></div>
+
+            </div>
+        </section>
+        
     </main>
 
     <footer>
