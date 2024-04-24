@@ -77,57 +77,54 @@ for (const seat of allSeats) {
         const inputText = document.getElementById('input-text');
         const applyBtn = document.getElementById('apply-btn');
 
-        inputText.addEventListener('input', function() {
-        if (inputText.value === 'NEW15' || inputText.value === 'Couple 20') {
-        applyBtn.addEventListener('click', function() {
-            let getDiscount = 0;
-            let discountPrice = 0;
-
-            if (inputText.value === 'NEW15') {
-                getDiscount = 0.15;
-            } else if (inputText.value === 'Couple 20') {
-                getDiscount = 0.20;
-            }
-
-            discountPrice = sumOfTheTicketFare * getDiscount;
-
-            const selectedDiscountBar = document.getElementById('discount-bar');
-            const getDiscountBar = document.createElement('div');
-
-            getDiscountBar.classList.add('flex', 'justify-between');
-            getDiscountBar.style.color = '#000';
-            getDiscountBar.style.marginTop = '16px';
-            getDiscountBar.style.marginBottom = '16px';
-
-            const Dtitle = document.createElement('p');
-            Dtitle.innerText = 'Total Discount';
-
-            const DtotalPrice = document.createElement('p');
-            DtotalPrice.innerText = discountPrice;
-
-            // Clear existing discount bar content
-            selectedDiscountBar.innerHTML = '';
-
-            getDiscountBar.appendChild(Dtitle);
-            getDiscountBar.appendChild(DtotalPrice);
-            selectedDiscountBar.appendChild(getDiscountBar);
-
-            // Update grand total
-            document.getElementById('grand-total').innerText = 
-            sumOfTheTicketFare - discountPrice;
-
-            applyBtn.disabled = true;
-
-            // hide the offer area
-            document.getElementById('offer-applying-area').classList.add('hidden');
-
-            
-        });
-            
+        inputText.addEventListener('input', function() { 
+            if (inputText.value === 'NEW15' || inputText.value === 'Couple 20') {
+                applyBtn.addEventListener('click', function() {
+                    let getDiscount = 0;
+                    let discountPrice = 0;
         
-    }
-});
-
+                    if (inputText.value === 'NEW15') {
+                        getDiscount = 0.15;
+                    } else if (inputText.value === 'Couple 20') {
+                        getDiscount = 0.20;
+                    }
+        
+                    discountPrice = sumOfTheTicketFare * getDiscount;
+        
+                    const selectedDiscountBar = document.getElementById('discount-bar');
+                    const getDiscountBar = document.createElement('div');
+        
+                    getDiscountBar.classList.add('flex', 'justify-between');
+                    getDiscountBar.style.color = '#000';
+                    getDiscountBar.style.marginTop = '16px';
+                    getDiscountBar.style.marginBottom = '16px';
+        
+                    const Dtitle = document.createElement('p');
+                    Dtitle.innerText = 'Total Discount';
+        
+                    const DtotalPrice = document.createElement('p');
+                    DtotalPrice.innerText = discountPrice;
+        
+                    // Clear existing discount bar content
+                    selectedDiscountBar.innerHTML = '';
+        
+                    getDiscountBar.appendChild(Dtitle);
+                    getDiscountBar.appendChild(DtotalPrice);
+                    selectedDiscountBar.appendChild(getDiscountBar);
+        
+                    // Update grand total
+                    document.getElementById('grand-total').innerText = sumOfTheTicketFare - discountPrice;
+        
+                    applyBtn.disabled = true;
+        
+                    // Hide the offer area
+                    document.getElementById('offer-applying-area').classList.add('hidden');
+                });
+            } else {
+                alert('Invalid Coupon Code');
+            }
+        });
+        
      
         
 
