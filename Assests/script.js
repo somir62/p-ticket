@@ -55,6 +55,7 @@ for (const seat of allSeats) {
         getSeatInfo.appendChild(pClass);
         getSeatInfo.appendChild(pFare);
         selectedSeatInfo.appendChild(getSeatInfo);
+        
 
         setInnerText('selected-seats', seatCount);
 
@@ -65,6 +66,8 @@ for (const seat of allSeats) {
 
         // Update grand price
         document.getElementById('grand-total').innerText = totalPrice + ticketFare;
+
+
 
         
 
@@ -94,6 +97,7 @@ for (const seat of allSeats) {
             getDiscountBar.classList.add('flex', 'justify-between');
             getDiscountBar.style.color = '#000';
             getDiscountBar.style.marginTop = '16px';
+            getDiscountBar.style.marginBottom = '16px';
 
             const Dtitle = document.createElement('p');
             Dtitle.innerText = 'Total Discount';
@@ -113,6 +117,9 @@ for (const seat of allSeats) {
             sumOfTheTicketFare - discountPrice;
 
             applyBtn.disabled = true;
+
+            // hide the offer area
+            document.getElementById('offer-applying-area').classList.add('hidden');
 
             
         });
